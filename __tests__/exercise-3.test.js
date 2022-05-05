@@ -1,14 +1,13 @@
 import getNumberType from '../src/exercise-3';
 
 describe('get the type of the number', () => {
-
     test('should return even number given 24', () => {
         //GIVEN
-        let number = 24;
-        let expected = 'even number';
+        const number = 24;
+        const expected = 'even number';
 
         //WHEN
-        let result = getNumberType(number);
+        const result = getNumberType(number);
 
         //THEN
         expect(result).toEqual(expected);
@@ -16,11 +15,11 @@ describe('get the type of the number', () => {
 
     test('should return odd number given 13', () => {
         //GIVEN
-        let number = 13;
-        let expected = 'odd number';
+        const number = 13;
+        const expected = 'odd number';
 
         //WHEN
-        let result = getNumberType(number);
+        const result = getNumberType(number);
 
         //THEN
         expect(result).toEqual(expected);
@@ -28,10 +27,10 @@ describe('get the type of the number', () => {
 
     test('should return null given 0', () => {
         //GIVEN
-        let number = 0;
+        const number = 0;
 
         //WHEN
-        let result = getNumberType(number);
+        const result = getNumberType(number);
 
         //THEN
         expect(result).toBeNull();
@@ -39,10 +38,10 @@ describe('get the type of the number', () => {
 
     test('should return null given -10', () => {
         //GIVEN
-        let number = -10;
+        const number = -10;
 
         //WHEN
-        let result = getNumberType(number);
+        const result = getNumberType(number);
 
         //THEN
         expect(result).toBeNull();
